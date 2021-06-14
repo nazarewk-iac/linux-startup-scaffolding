@@ -1,0 +1,5 @@
+for file in ~/.config/startup/bash/login.d/*.sh ; do
+  if [ -r "${file}" ] ; then
+    . "${file}"
+  fi
+done

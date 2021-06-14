@@ -1,0 +1,5 @@
+for file in ~/.config/startup/zsh/interactive.d/*.sh ; do
+  if [ -r "${file}" ] ; then
+    . "${file}"
+  fi
+done

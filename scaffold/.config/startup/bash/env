@@ -1,0 +1,7 @@
+# WARNING: this will $BASH_ENV to get a correct startup sequence
+
+for file in ~/.config/startup/bash/env.d/*.sh ; do
+  if [ -r "${file}" ] ; then
+    . "${file}"
+  fi
+done

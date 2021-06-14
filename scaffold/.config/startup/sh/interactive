@@ -1,0 +1,8 @@
+# TRIGGER: runs from $ENV set in ~/.config/startup/common/env
+# WARNING: this will not be run for non-login, non-interactive shells.
+
+for file in ~/.config/startup/sh/interactive.d/*.sh ; do
+  if [ -r "${file}" ] ; then
+    . "${file}"
+  fi
+done

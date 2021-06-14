@@ -1,0 +1,1 @@
+. ~/.config/startup/bash/logout
